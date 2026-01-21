@@ -10,42 +10,63 @@
 <body>
 
 <header>
-  <h1>Demo Business</h1>
-  <nav>
-    <a href="#services">Услуги</a>
-    <a href="#contact">Контакт</a>
-  </nav>
+  <div class="container">
+    <h1>Demo Business</h1>
+    <nav>
+      <a href="#services">Услуги</a>
+      <a href="#about">За нас</a>
+      <a href="#contact">Контакт</a>
+    </nav>
+  </div>
 </header>
 
 <main>
-  <section>
-    <h2>Професионален сайт за малък бизнес</h2>
-    <p>Това е демо проект с реална структура и функционалност.</p>
-    <button id="ctaBtn">Свържи се с нас</button>
+  <section class="hero">
+    <div class="container">
+      <h2>Професионален уебсайт за малък бизнес</h2>
+      <p>Демо проект с реална структура, чист код и функционалност.</p>
+      <button id="ctaBtn">Свържи се с нас</button>
+    </div>
   </section>
 
-  <section id="services">
-    <h2>Услуги</h2>
-    <ul>
-      <li>Изработка на уебсайтове</li>
-      <li>Интеграция на чат</li>
-      <li>Поддръжка</li>
-    </ul>
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Услуги</h2>
+      <ul class="services-list">
+        <li>Изработка на уебсайтове</li>
+        <li>Интеграция на чат и форми</li>
+        <li>Техническа поддръжка</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Контакт</h2>
-    <form>
-      <input type="text" placeholder="Име" required>
-      <input type="email" placeholder="Имейл" required>
-      <textarea placeholder="Съобщение"></textarea>
-      <button type="submit">Изпрати</button>
-    </form>
+  <section id="about" class="section light">
+    <div class="container">
+      <h2>За нас</h2>
+      <p>
+        Този сайт е пример за минимален, но качествен уеб проект,
+        подходящ за представяне на малък бизнес или услуга.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Контакт</h2>
+      <form>
+        <input type="text" placeholder="Име" required>
+        <input type="email" placeholder="Имейл" required>
+        <textarea placeholder="Съобщение" required></textarea>
+        <button type="submit">Изпрати</button>
+      </form>
+    </div>
   </section>
 </main>
 
 <footer>
-  <p>Demo project for portfolio</p>
+  <div class="container">
+    <p>© Demo project for portfolio purposes</p>
+  </div>
 </footer>
 
 <script src="main.js"></script>
